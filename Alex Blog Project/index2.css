@@ -1,0 +1,138 @@
+body { margin:0;
+  padding: 0;
+ }
+
+ /* body {
+     background-image: url("statues-narrow.jpg");
+     background-size: contain;
+     background-repeat: no-repeat; } */
+
+ /* Medium Screens */
+ @media (max-width:899px) {
+   body{
+     background-image: url("statues-narrow.jpg");
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+
+   }
+   html {
+     height: 100%;
+   }
+
+   .container {
+     /* background-image: url("statues-narrow.jpg");
+     background-size: contain;
+     background-repeat: no-repeat; */
+   }
+   .div1 {
+     grid-area: 2 / 1 / 4 / 8;
+     text-align: center;
+    }
+   #photo-container {
+     border: solid 2px black;
+     background-color: rgba(255,255,255,0.5);
+   }
+
+   #photo-of-day {
+     width: 100%;
+     height: auto;
+     border: double black 2px;
+     padding: 4px;
+   }
+   .button{
+     height: 150px;
+     width: 150px;
+   }
+   }
+
+ /* @media (min-width: 600px) and (max-width:900px) {
+   .container {
+     background-image: url("statues-resize.jpg");
+     background-size: contain;
+     background-repeat: no-repeat; */
+
+
+   }
+ }
+
+@media (min-width:900px) and (max-width:2000px) {
+  body{
+   background-image: url("statues-horizontal.jpg");
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+
+  }
+  html {
+   height: 100%;
+  }
+
+   .button{
+     height: 150px;
+     width: 150px;
+  }}
+
+
+   /* .container {
+     background-image: url("statues-resize.jpg");
+     background-size: contain;
+     background-repeat: no-repeat;
+
+
+   } */
+/* } */
+
+.container {
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+height: 100%;
+width: 100%;
+}
+
+.div1 {
+  grid-area: 2 / 3 / 4 / 7;
+  text-align: center;
+ }
+.div2 {
+  grid-area: 1 / 1 / 2 / 9;
+  text-align: center;
+ }
+.div3 {
+  grid-area: 4 / 1 / 5 / 9;
+  text-align: center;
+}
+/* .div4 {
+  grid-area: 2 / 7 / 4 / 9;
+} */
+/* .div5 { grid-area: 2 / 1 / 4 / 3; } */
+
+.button {
+  /* background-color: #4CAF50; */
+  border: 8px black double ;
+  background-color: rgba(255,255,255,0.5);
+  /* color: green; */
+  /* padding: 20px; */
+  /* height: 120px;
+  width: 120px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  border-radius: 50%;
+
+}
+
+#photo-container {
+  border: solid 2px black;
+  background-color: rgba(255,255,255,0.5);
+}
+
+#photo-of-day {
+  width: 85%;
+  height: auto;
+  border: double black 2px;
+  padding: 4px;
+}
